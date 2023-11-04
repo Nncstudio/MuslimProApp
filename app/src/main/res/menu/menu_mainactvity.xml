@@ -1,0 +1,90 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hurricanedev.muslimpro.activity.MainActivity">
+
+<!--
+
+    <item
+        android:icon="@drawable/ic_baseline_language_24"
+        app:showAsAction="always"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/bahasa_lang"
+                android:icon="@drawable/id"
+                app:showAsAction="ifRoom"
+                android:title="@string/bahasa_langu"/>
+
+
+            <item
+                android:id="@+id/turk_lang"
+                android:icon="@drawable/tr"
+                app:showAsAction="ifRoom"
+                android:title="@string/turkish_langu"/>
+
+
+
+
+            <item
+                android:id="@+id/arabic_lang"
+                android:icon="@drawable/ar"
+                app:showAsAction="ifRoom"
+                android:title="@string/arabic_langu"/>
+
+
+            <item
+                android:id="@+id/russian_lang"
+                android:icon="@drawable/ru"
+                app:showAsAction="ifRoom"
+                android:title="@string/russian_langu"/>
+
+
+            <item
+                android:id="@+id/malay_labg"
+                android:icon="@drawable/ms"
+                app:showAsAction="ifRoom"
+                android:title="@string/malay_langu"/>
+
+            <item
+                android:id="@+id/eng_labg"
+                android:icon="@drawable/en"
+                app:showAsAction="ifRoom"
+                android:title="@string/eng_langu"/>
+
+
+        </menu>
+    </item>
+-->
+
+    <item
+        android:title="@string/qibla"
+        android:id="@+id/action_qibla"
+        android:icon="@drawable/ic_compass_mini"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:title="@string/title_activity_user_setting"
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:title="@string/rate_it"
+        android:id="@+id/action_rate"
+        android:icon="@drawable/ic_baseline_star_24"
+        app:showAsAction="ifRoom"
+        />
+
+
+    <item
+        android:title="@string/share"
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_baseline_share_24"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

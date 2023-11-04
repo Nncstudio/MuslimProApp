@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appnsi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/wave"
+            android:layout_alignParentBottom="true"
+            android:scaleY="-1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/surahname"
+            android:progressTint="@android:color/holo_orange_light"
+            android:thumbTint="@android:color/holo_orange_light"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/quran_image"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:src="@raw/quran"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnPlay"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/quranTotalDurationLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:tint="@android:color/black"
+            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+        <TextView
+            android:id="@+id/quranCurrentDurationLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbar"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentStart="true"
+            android:text="00.00"
+            android:textColor="@android:color/holo_orange_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quranTotalDurationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/seekbar"
+            android:text="00.00"
+            android:textColor="@android:color/holo_orange_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/surahname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quran_image"
+            android:layout_margin="24dp"
+            android:layout_centerHorizontal="true"
+            android:text="SurahName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

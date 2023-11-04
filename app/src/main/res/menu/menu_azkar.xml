@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hurricanedev.muslimpro.activity.AzkarActivity">
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/action_share"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/copy"
+        android:icon="@drawable/ic_baseline_file_copy_24"
+        android:title="@string/action_copy"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/action_add_to_favorites"
+        app:showAsAction="always" />
+
+
+</menu>

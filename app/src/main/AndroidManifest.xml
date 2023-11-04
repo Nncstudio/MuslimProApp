@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hurricanedev.muslimpro">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/GreenActionBarTheme"
+        tools:replace="android:appComponentFactory"
+        tools:targetApi="p">
+        <activity android:name=".activity.QiblaActivity"
+            android:screenOrientation="portrait">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/Admob_App_ID" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.OccasionsActivity"
+            android:label="@string/title_activity_occasions"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuNavigation3Theme"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <!-- Points to searchable activity -->
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".AuteursActivity" />
+
+            <!-- Points to searchable meta data -->
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuNavigation3Theme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AzkarActivity"
+            android:label="@string/title_activity_azkar"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuNavigation3Theme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.AzkarsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AzkarsActivity"
+            android:label="@string/title_activity_azkars"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuNavigation3Theme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.QuranPlayActivity"
+            android:label="@string/title_activity_quran"
+            android:parentActivityName=".activity.Quranlist">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.Quranlist" />
+        </activity>
+        <activity
+            android:name=".activity.Quranlist"
+            android:label="@string/title_activity_quran"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuNavigation3Theme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuNavigation3Theme">
+
+        </activity>
+        <activity
+            android:name=".activity.UserSettingActivity"
+            android:label="@string/title_activity_user_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/MenuNavigation3Theme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver android:name=".utilities.WidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service android:name=".service.NotifyService" />
+
+        <receiver android:name=".service.ReminderReciver" />
+
+
+        <activity
+            android:name=".activity.AzkarsTimeSettingsActivity"
+            android:theme="@style/GreenActionBarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hurricanedev.muslimpro.activity.MainActivity" />
+        </activity>
+
+
+        <receiver android:name=".service.NewDayReciever" />
+
+        <receiver
+            android:name=".service.InfiniteReceiver"
+            android:enabled="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:id="@+id/freq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="16dp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/Chose_Frequency"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/black" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#40FFE500"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <RadioButton
+                android:id="@+id/Radio_5_m"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Radio5txt"
+                android:textColor="@android:color/black" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#40FFE500"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <RadioButton
+                android:id="@+id/Radio_15_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:text="@string/Radio15txt"
+                android:textColor="@android:color/black" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#40FFE500"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <RadioButton
+                android:id="@+id/Radio_60_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:text="@string/Radio60txt"
+                android:textColor="@android:color/black" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#40FFE500"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <RadioButton
+                android:id="@+id/Radio_120_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="@string/Radio120txt"
+                android:textColor="@android:color/black" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/donebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:background="@drawable/category_bg"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

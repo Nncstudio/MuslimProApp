@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--style 3-->
+    <color name="menuNavigation3colorPrimary">#FFE500</color>
+    <color name="menuNavigation3colorPrimaryDark">#FFE500</color>
+    <color name="menuNavigation3colorAccent">#FFE500</color>
+    <color name="colorPrimary">#FFE500</color>
+    <color name="colorPrimaryDark">#FFE500</color>
+</resources>

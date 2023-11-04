@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_update_setting" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefSpeaker"
+            android:title="@string/speaker_enable" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefNotif"
+            android:title="@string/notif" />
+
+        <Preference
+            android:defaultValue="true"
+            android:key="time"
+            android:title="Choice time for Quotes in screen" />
+
+        <Preference
+            android:key="mytime"
+            android:title="@string/pref_user_time" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_other" >
+        <Preference
+            android:key="about"
+            android:title="@string/title_about" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

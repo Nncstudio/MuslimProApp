@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/NoQuotes"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:src="@drawable/ic_baseline_favorite_24"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/quotesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:clipToPadding="false"
+            android:dividerHeight="16dp"
+            android:divider="@android:color/transparent"
+            android:paddingBottom="64dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+        <RelativeLayout
+            android:id="@+id/layAdsAzkars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
